@@ -1,0 +1,564 @@
+@charset "UTF-8";
+
+#buy {
+    width: 1200px;
+    height: 800px;
+    margin: 0 auto;
+}
+
+.buy_title {
+    width: 1200px;
+    height: 100px;
+    border-bottom: 3px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.buy_title>h2 {
+    letter-spacing: -0.5px;
+    font-weight: normal;
+    font-size: 24px;
+}
+
+.buy_title>p {
+    letter-spacing: -1px;
+    color: #888;
+}
+
+.buy_img {
+    width: 500px;
+    height: 500px;
+    float: left;
+    margin: 35px;
+}
+
+.buy_price {
+    width: 500px;
+    height: 500px;
+    float: right;
+    margin-top: 35px;
+    margin-right: 0px;
+}
+
+.buy_price>table {
+    width: 450px;
+    height: 350px;
+    letter-spacing: -1px;
+}
+
+.buy_price table tr td:nth-of-type(1) {
+    font-size: 15.5px;
+    font-weight: normal;
+    width: 100px;
+    height: 35px;
+}
+
+.buy_price table tr td:nth-of-type(2) {
+    color: #888;
+    font-size: 13.5px;
+    width: 300px;
+    height: 25px;
+}
+
+.buy_price .pay {
+    width: 450px;
+    height: 75px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.buy_price .pay form p {
+    font-size: 13px;
+    margin-top: 10px;
+    letter-spacing: -0.5px;
+}
+
+.buy_price .pay form input {
+    border: 1px solid #ddd;
+    width: 45px;
+    height: 23px;
+    text-align: center;
+    background-color: white;
+    margin-top: 10px;
+    float: left;
+}
+
+.buy_price .pay form input:nth-of-type(2) {
+    width: 30px;
+    height: 25px;
+    margin-left: -1px;
+    color: #888;
+    float: left;
+}
+
+.buy_price .pay form input:nth-of-type(3) {
+    width: 30px;
+    height: 25px;
+    margin-left: -1px;
+    color: #888;
+    float: left;
+}
+
+.buy_price .pay form p:nth-of-type(2) {
+    font-size: 12px;
+    margin-top: 70px;
+    margin-left: 160px;
+    color: #666;
+    float: left;
+}
+
+.buy_price .pay form input:nth-of-type(4) {
+    width: 85px;
+    font-size: 22px;
+    margin-top: 65px;
+    margin-left: 10px;
+    font-weight: 600;
+    border: none;
+    float: left;
+    text-align: right;
+}
+
+.buy_price .pay form p:nth-of-type(3) {
+    font-size: 13px;
+    margin-top: 67.5px;
+    margin-left: 3px;
+    float: left;
+}
+
+.buy_price .pay form input:focus {
+    outline: none;
+}
+
+.buy_price .pay button {
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border: 1px solid #ddd;
+    font-size: 19px;
+    text-align: center;
+    color: #aaa;
+    margin-top: 7.5px;
+    margin-left: -5.5px;
+}
+
+.buy_button {
+    width: 475px;
+    height: 60px;
+    margin-top: 100px;
+    margin-left: 675px;
+}
+
+.buy_button>button:nth-of-type(1) {
+    width: 150px;
+    height: 60px;
+    background-color: #e60011;
+    color: white;
+    font-size: 19px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    border: none;
+    float: right;
+}
+
+.buy_button>button:nth-of-type(2) {
+    width: 100px;
+    height: 60px;
+    background-color: black;
+    color: white;
+    font-size: 19px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    border: none;
+    float: right;
+}
+
+.buy_button>button:nth-of-type(3) {
+    width: 100px;
+    height: 60px;
+    background-color: gray;
+    color: white;
+    font-size: 19px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    border: none;
+    float: right;
+}
+
+.buy_button>button:nth-of-type(4) {
+    width: 100px;
+    height: 60px;
+    background-color: white;
+    font-size: 19px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    border: 1px solid #ddd;
+    float: right;
+}
+
+#detail {
+    width: 1200px;
+    height: 5400px;
+    margin: 0 auto;
+}
+
+#detail .bar {
+    width: 1200px;
+    height: 50px;
+    background-color: white;
+    float: left;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+#detail .bar>button {
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    font-size: 18px;
+    border: 1px solid #e8e8e8;
+    background-color: white;
+    color: #777;
+    margin: 0 0 0 0px;
+    float: left;
+    font-weight: 500;
+}
+
+#detail .bar button:hover {
+    background: #333;
+    color: white;
+    transition: all 0.3s ease;
+    border: 1px solid #333;
+}
+
+#detail .bar>.info_1>img {
+    float: left;
+    margin-top: 35px;
+    margin-left: 200px;
+}
+
+#detail .bar button.active {
+    background: #333;
+    color: white;
+}
+
+/* #detail .bar button:nth-of-type(1):active,
+#detail .bar button:nth-of-type(1):focus{
+    background: #333;
+    color: white;
+}
+
+#detail .bar button:nth-of-type(2):active,
+#detail .bar button:nth-of-type(2):focus{
+    background: #333;
+    color: white;
+}
+
+#detail .bar button:nth-of-type(3):active,
+#detail .bar button:nth-of-type(3):focus{
+    background: #333;
+    color: white;
+}
+
+#detail .bar button:nth-of-type(4):active,
+#detail .bar button:nth-of-type(4):focus{
+    background: #333;
+    color: white;
+}
+
+#detail .bar button:nth-of-type(5):active,
+#detail .bar button:nth-of-type(5):focus{
+    background: #333;
+    color: white;
+} */
+
+#detail .bar>.info_1>h2 {
+    float: left;
+    font-size: 16px;
+    color: #e60011;
+    width: 500px;
+    margin-top: 40px;
+    letter-spacing: -0.5px;
+}
+
+#detail .bar>.info_1>p {
+    font-size: 12px;
+    width: 500px;
+    letter-spacing: -0.5px;
+}
+
+#detail .bar>.info_2 {
+    display: none;
+    width: 120px;
+}
+
+#detail .bar>.info_2>h2 {
+    font-size: 16px;
+    float: left;
+    margin-top: 41px;
+    letter-spacing: -1px;
+}
+
+#detail .bar>.info_2>p {
+    font-size: 12px;
+    float: left;
+    margin-top: 15px;
+    letter-spacing: -0.5px;
+}
+
+#detail .bar>.info_3 {
+    display: none;
+}
+
+#detail .bar>.info_3>table {
+    width: 1200px;
+    font-size: 12px;
+    height: 650px;
+    margin-top: 20px;
+    float: left;
+    text-align: center;
+    border-collapse: collapse;
+    letter-spacing: -0.5px;
+}
+
+#detail .bar .info_3 table tr:nth-of-type(1) th {
+    border-bottom: 1px #333 solid;
+}
+
+#detail .bar .info_3 table tr:nth-of-type(1) td {
+    border-bottom: 1px #333 solid;
+}
+
+#detail .bar>.info_3 th {
+    border-bottom: 1px solid #e8e8e8;
+}
+
+#detail .bar>.info_3 td {
+    border-bottom: 1px solid #e8e8e8;
+}
+
+#detail .bar .info_3 th:nth-of-type(1) {
+    width: 70px;
+    font-weight: 600;
+}
+
+#detail .bar>.info_3 tr td:nth-of-type(1) {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+#detail .bar>.info_3 tr td a:hover {
+    color: #e60011;
+}
+
+#detail .page {
+    float: left;
+    width: 750px;
+    margin-left: 440px;
+    margin-top: 30px;
+}
+
+#detail .page a {
+    margin-left: 20px;
+    color: #888;
+}
+
+#detail .page a:nth-of-type(1) {
+    font-weight: bold;
+    color: #333;
+}
+
+#detail .page a:hover {
+    color: #333;
+}
+
+#detail .info_3 button {
+    width: 110px;
+    height: 40px;
+    background-color: white;
+    color: #333;
+    border: 1px solid #333;
+    font-size: 13px;
+    font-weight: 600;
+    float: right;
+    margin-top: -30px;
+}
+
+#detail .info_3 button:hover {
+    background: #333;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+#detail .bar>.info_4 {
+    display: none;
+}
+
+#detail .bar>.info_4>table {
+    width: 1200px;
+    font-size: 12px;
+    height: 650px;
+    margin-top: 20px;
+    float: left;
+    text-align: center;
+    border-collapse: collapse;
+    letter-spacing: -0.5px;
+}
+
+#detail .bar .info_4 table tr:nth-of-type(1) th {
+    border-bottom: 1px #333 solid;
+}
+
+#detail .bar .info_4 table tr:nth-of-type(1) td {
+    border-bottom: 1px #333 solid;
+}
+
+#detail .bar>.info_4 th {
+    border-bottom: 1px solid #e8e8e8;
+}
+
+#detail .bar>.info_4 td {
+    border-bottom: 1px solid #e8e8e8;
+}
+
+#detail .bar .info_4 th:nth-of-type(1) {
+    width: 70px;
+    font-weight: 600;
+}
+
+#detail .bar>.info_4 tr td:nth-of-type(1) {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+#detail .bar>.info_4 tr td a:hover {
+    color: #e60011;
+}
+
+#detail .page {
+    float: left;
+    width: 750px;
+    margin-left: 440px;
+    margin-top: 30px;
+}
+
+#detail .page a {
+    margin-left: 20px;
+    color: #888;
+}
+
+#detail .page a:nth-of-type(1) {
+    font-weight: bold;
+    color: #333;
+}
+
+#detail .page a:hover {
+    color: #333;
+}
+
+#detail .info_4 button {
+    width: 110px;
+    height: 40px;
+    background-color: white;
+    color: #333;
+    border: 1px solid #333;
+    font-size: 13px;
+    font-weight: 600;
+    float: right;
+    margin-top: -30px;
+}
+
+#detail .info_4 button:hover {
+    background: #333;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+#detail .bar>.info_5 {
+    display: none;
+}
+
+#detail .bar>.info_5 .guide {
+    width: 1200px;
+    height: 1200px;
+    background-color: #f1f1f1;
+    float: left;
+    margin-top: 35px;
+}
+
+#detail .bar .info_5 .guide .top {
+    width: 900px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #888;
+    float: left;
+    margin-top: 100px;
+    margin-left: 150px;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#detail .bar .info_5 .guide .center {
+    width: 1000px;
+    float: left;
+    font-size: 13px;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+#detail .bar .info_5 .guide .center li {
+    list-style-type: disc;
+    line-height: 25px;
+    letter-spacing: -0.5px;
+}
+
+#detail .bar .info_5 .guide .center li:nth-of-type(1) {
+    list-style: none;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-left: -30px;
+    letter-spacing: -0.5px;
+}
+
+#detail .bar .info_5 .guide .bottom h3 {
+    float: left;
+    font-size: 20px;
+    margin-top: 100px;
+    margin-left: 70px;
+    letter-spacing: -0.5px;
+}
+
+#detail .bar .info_5 .guide .bottom table {
+    float: left;
+    width: 1000px;
+    margin-top: 10px;
+    margin-left: 100px;
+    border-collapse: collapse;
+}
+
+#detail .bar .info_5 .guide .bottom table tr {
+    border: 1px solid #333;
+}
+
+#detail .bar .info_5 .guide .bottom table th {
+    font-size: 14px;
+    border: 1px solid #333;
+    padding: 15px;
+    line-height: 15px;
+    letter-spacing: -0.5px;
+}
+
+#detail .bar .info_5 .guide .bottom table td {
+    font-size: 12px;
+    border: 1px solid #333;
+    padding: 15px;
+    line-height: 20px;
+    letter-spacing: -0.5px;
+}
+
+button:focus {
+    outline: none;
+}
