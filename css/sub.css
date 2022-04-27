@@ -1,11 +1,13 @@
 @charset "UTF-8";
 
+/*앨범 구매 박스*/
 #buy {
     width: 1200px;
     height: 800px;
     margin: 0 auto;
 }
 
+/*앨범 구매 제목 사은품 텍스트*/
 .buy_title {
     width: 1200px;
     height: 100px;
@@ -27,6 +29,7 @@
     color: #888;
 }
 
+/*앨범 아트 이미지*/
 .buy_img {
     width: 500px;
     height: 500px;
@@ -34,6 +37,7 @@
     margin: 35px;
 }
 
+/*앨범 가격표 박스*/
 .buy_price {
     width: 500px;
     height: 500px;
@@ -42,6 +46,7 @@
     margin-right: 0px;
 }
 
+/*앨범 가격표 정보*/
 .buy_price>table {
     width: 450px;
     height: 350px;
@@ -62,6 +67,7 @@
     height: 25px;
 }
 
+/*앨범 가격표 수량*/
 .buy_price .pay {
     width: 450px;
     height: 75px;
@@ -131,6 +137,7 @@
     outline: none;
 }
 
+/*+,- 수량 박스 디자인*/
 .buy_price .pay button {
     width: 25px;
     height: 25px;
@@ -143,6 +150,7 @@
     margin-left: -5.5px;
 }
 
+/*상품문의, 관심상품, 장바구니, 바로구매*/
 .buy_button {
     width: 475px;
     height: 60px;
@@ -150,6 +158,7 @@
     margin-left: 675px;
 }
 
+/*바로구매*/
 .buy_button>button:nth-of-type(1) {
     width: 150px;
     height: 60px;
@@ -162,6 +171,7 @@
     float: right;
 }
 
+/*장바구니*/
 .buy_button>button:nth-of-type(2) {
     width: 100px;
     height: 60px;
@@ -174,6 +184,7 @@
     float: right;
 }
 
+/*관심상품*/
 .buy_button>button:nth-of-type(3) {
     width: 100px;
     height: 60px;
@@ -186,6 +197,7 @@
     float: right;
 }
 
+/*상품문의*/
 .buy_button>button:nth-of-type(4) {
     width: 100px;
     height: 60px;
@@ -197,12 +209,14 @@
     float: right;
 }
 
+/*상품정보, 트랙정보, 리뷰, Q&A, 배송/교환/상품 박스*/
 #detail {
     width: 1200px;
     height: 5400px;
     margin: 0 auto;
 }
 
+/*상품정보, 트랙정보, 리뷰, Q&A, 배송/교환/상품 버튼바*/
 #detail .bar {
     width: 1200px;
     height: 50px;
@@ -211,6 +225,7 @@
     border-bottom: 1px solid #e8e8e8;
 }
 
+/*상품정보, 트랙정보, 리뷰, Q&A, 배송/교환/상품 버튼바 디자인*/
 #detail .bar>button {
     width: 150px;
     height: 50px;
@@ -224,6 +239,7 @@
     font-weight: 500;
 }
 
+/*상품정보, 트랙정보, 리뷰, Q&A, 배송/교환/상품 마우스 반응*/
 #detail .bar button:hover {
     background: #333;
     color: white;
@@ -231,47 +247,20 @@
     border: 1px solid #333;
 }
 
+/*상품정보 product.jpg 위치*/
 #detail .bar>.info_1>img {
     float: left;
     margin-top: 35px;
     margin-left: 200px;
 }
 
+/*상품정보 버튼바 기본 활성*/
 #detail .bar button.active {
     background: #333;
     color: white;
 }
 
-/* #detail .bar button:nth-of-type(1):active,
-#detail .bar button:nth-of-type(1):focus{
-    background: #333;
-    color: white;
-}
-
-#detail .bar button:nth-of-type(2):active,
-#detail .bar button:nth-of-type(2):focus{
-    background: #333;
-    color: white;
-}
-
-#detail .bar button:nth-of-type(3):active,
-#detail .bar button:nth-of-type(3):focus{
-    background: #333;
-    color: white;
-}
-
-#detail .bar button:nth-of-type(4):active,
-#detail .bar button:nth-of-type(4):focus{
-    background: #333;
-    color: white;
-}
-
-#detail .bar button:nth-of-type(5):active,
-#detail .bar button:nth-of-type(5):focus{
-    background: #333;
-    color: white;
-} */
-
+/*상품정보 상세 설명*/
 #detail .bar>.info_1>h2 {
     float: left;
     font-size: 16px;
@@ -287,6 +276,7 @@
     letter-spacing: -0.5px;
 }
 
+/*트랙정보*/
 #detail .bar>.info_2 {
     display: none;
     width: 120px;
@@ -306,10 +296,12 @@
     letter-spacing: -0.5px;
 }
 
+/*리뷰*/
 #detail .bar>.info_3 {
     display: none;
 }
 
+/*리뷰 테이블*/
 #detail .bar>.info_3>table {
     width: 1200px;
     font-size: 12px;
@@ -337,11 +329,13 @@
     border-bottom: 1px solid #e8e8e8;
 }
 
+/*리뷰 NO세로줄*/
 #detail .bar .info_3 th:nth-of-type(1) {
     width: 70px;
     font-weight: 600;
 }
 
+/*리뷰 subject*/
 #detail .bar>.info_3 tr td:nth-of-type(1) {
     font-size: 13px;
     font-weight: 600;
@@ -351,6 +345,7 @@
     color: #e60011;
 }
 
+/*리뷰 1~9페이지*/
 #detail .page {
     float: left;
     width: 750px;
@@ -372,6 +367,7 @@
     color: #333;
 }
 
+/*리뷰 작성버튼*/
 #detail .info_3 button {
     width: 110px;
     height: 40px;
@@ -390,6 +386,7 @@
     transition: all 0.3s ease;
 }
 
+/*Q&A*/
 #detail .bar>.info_4 {
     display: none;
 }
@@ -421,11 +418,13 @@
     border-bottom: 1px solid #e8e8e8;
 }
 
+/*Q&A NO세로줄*/
 #detail .bar .info_4 th:nth-of-type(1) {
     width: 70px;
     font-weight: 600;
 }
 
+/*Q&A subject*/
 #detail .bar>.info_4 tr td:nth-of-type(1) {
     font-size: 13px;
     font-weight: 600;
@@ -435,6 +434,7 @@
     color: #e60011;
 }
 
+/*Q&A 1~9페이지*/
 #detail .page {
     float: left;
     width: 750px;
@@ -456,6 +456,7 @@
     color: #333;
 }
 
+/*Q&A 작성버튼*/
 #detail .info_4 button {
     width: 110px;
     height: 40px;
@@ -478,14 +479,16 @@
     display: none;
 }
 
+/*배송/교환/반품*/
 #detail .bar>.info_5 .guide {
     width: 1200px;
     height: 1200px;
-    background-color: #f1f1f1;
+    /* background-color: #f1f1f1; */
     float: left;
     margin-top: 35px;
 }
 
+/*제일 윗줄(※상품 페이지..)*/
 #detail .bar .info_5 .guide .top {
     width: 900px;
     padding-top: 5px;
@@ -500,6 +503,7 @@
     font-weight: bold;
 }
 
+/*배송안내*/
 #detail .bar .info_5 .guide .center {
     width: 1000px;
     float: left;
@@ -523,6 +527,7 @@
     letter-spacing: -0.5px;
 }
 
+/*반품/교환 안내*/
 #detail .bar .info_5 .guide .bottom h3 {
     float: left;
     font-size: 20px;

@@ -14,6 +14,7 @@
 </head>
 
 <body>
+    <!-- header html -->
     <header>
         <div id="logo"><a href="index.html"><img src="img/main/logo_1.png" alt="logo_1"></a></div>
         <div id="logo2"><a href="https://www.hanteochart.com/network/family"><img src="img/main/logo_2.png"
@@ -95,8 +96,8 @@
         </nav>
     </header>
 
-    <!-- header html -->
-
+    <!-- sub.html시작 -->
+    <!-- 앨범구매박스 -->
     <div id="buy">
         <div class="buy_title">
             <h2>윤하 (YOUNHA) - 정규6집 리패키지 [End Theory Final Edition]</h2>
@@ -152,7 +153,7 @@
             </table>
 
             <div class="pay">
-                <form action="" name="form" method="get">
+                <form name="form" method="get">
                     <p>윤하 (YOUNHA) - 정규6집 리패키지 [End Theory Final Edition]</p>
                     <input type="text" name="amount" value="1" size='3' onchange="change()">
                     <input type="button" value="+" onclick="add()">
@@ -174,6 +175,7 @@
         </a>
     </div>
 
+    <!-- 상품정보, 트랙정보, 리뷰, Q&A, 배송/교환/반품 -->
     <div id="detail">
         <div class="bar">
             <button class="active">상품정보</button>
@@ -182,6 +184,7 @@
             <button>Q&A</button>
             <button>배송/교환/반품</button>
 
+            <!-- 상품정보 -->
             <div class="info_1">
 
                 <img src="img/sub/product.jpg" alt="product_img">
@@ -215,6 +218,7 @@
                 </p>
             </div>
 
+            <!-- 트랙정보 -->
             <div class="info_2">
 
                 <h2>DISC (CD).1</h2> <br>
@@ -237,6 +241,7 @@
                 </p>
             </div>
 
+            <!-- 리뷰 -->
             <div class="info_3">
 
                 <table>
@@ -354,6 +359,7 @@
 
             </div>
 
+            <!-- Q&A -->
             <div class="info_4">
 
                 <table>
@@ -471,6 +477,7 @@
 
             </div>
 
+            <!-- 배송/교환/상품 -->
             <div class="info_5">
                 <div class="guide">
                     <div class="top">※ 상품 페이지 또는 상품 설명서에 배송/교환/반품 관련 안내가 있는 경우 그 내용을 우선으로 합니다.</div>
@@ -547,6 +554,7 @@
 
     </div>
 
+    <!-- footer html -->
     <div id="section6">
 
         <div class="join"><a href="index.html"><i class="fa-solid fa-user-plus"></i>
@@ -616,103 +624,10 @@
         </div>
     </div>
 
-    <!-- 버튼 클릭시 화면 변환 스크립트-->
+    <!--스크립트 링크-->
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
-
-    <script>
-        $(function () {
-            $('#detail button:nth-of-type(1)').click(function () {
-                $('#detail button').removeClass('active');
-                $(this).addClass('active');
-                $('.info_1').fadeIn();
-                $('.info_2').hide();
-                $('.info_3').hide();
-                $('.info_4').hide();
-                $('.info_5').hide();
-                $('#detail').css({ height: 5500 });
-            });
-
-            $('#detail button:nth-of-type(2)').click(function () {
-                $('#detail button').removeClass('active');
-                $(this).addClass('active');
-                $('.info_2').fadeIn();
-                $('.info_1').hide();
-                $('.info_3').hide();
-                $('.info_4').hide();
-                $('.info_5').hide();
-                $('#detail').css({ height: 420 });
-            });
-
-            $('#detail button:nth-of-type(3)').click(function () {
-                $('#detail button').removeClass('active');
-                $(this).addClass('active');
-                $('.info_3').fadeIn();
-                $('.info_1').hide();
-                $('.info_2').hide();
-                $('.info_4').hide();
-                $('.info_5').hide();
-                $('#detail').css({ height: 850 });
-            });
-
-            $('#detail button:nth-of-type(4)').click(function () {
-                $('#detail button').removeClass('active');
-                $(this).addClass('active');
-                $('.info_4').fadeIn();
-                $('.info_1').hide();
-                $('.info_2').hide();
-                $('.info_3').hide();
-                $('.info_5').hide();
-                $('#detail').css({ height: 850 });
-            });
-
-            $('#detail button:nth-of-type(5)').click(function () {
-                $('#detail button').removeClass('active');
-                $(this).addClass('active');
-                $('.info_5').fadeIn();
-                $('.info_1').hide();
-                $('.info_2').hide();
-                $('.info_3').hide();
-                $('.info_4').hide();
-                $('#detail').css({ height: 1400 });
-            });
-        });
-    </script>
-
-    <!-- 가격 수량 계산 스크립트-->
-    <script>
-        var sell_price = 25200;
-        var amount = document.form.amount.value;
-        document.form.sum.value = sell_price;
-
-        function add() {
-            hm = document.form.amount;
-            sum = document.form.sum;
-            hm.value++;
-            sum.value = parseInt(hm.value) * sell_price;
-        }
-
-        function del() {
-            hm = document.form.amount;
-            sum = document.form.sum;
-            if (hm.value > 1) {
-                hm.value--;
-                sum.value = parseInt(hm.value) * sell_price;
-            }
-        }
-
-        function change() {
-            hm = document.form.amount;
-            sum = document.form.sum;
-
-            if (hm.value < 0) {
-                hm.value = 0;
-            }
-            sum.value = parseInt(hm.value) * sell_price;
-        }
-    </script>
+    <script src="js/sub.js"></script>
 
 </body>
-
-<!-- footer html -->
 
 </html>
