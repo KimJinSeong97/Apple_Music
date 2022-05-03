@@ -8,6 +8,11 @@
 }
 
 /* slider 라디오 버튼 */
+
+#slider input:focus {
+    outline: none;
+}
+
 #slider input[value="slider_radio_1"] {
     position: absolute;
     margin-top: 450px;
@@ -65,7 +70,7 @@
 
 /* slider 배너 이미지 */
 .imgbox {
-    width: 1903px;
+    width: 1920px;
     height: 100%;
     margin: 0 auto;
     position: relative;
