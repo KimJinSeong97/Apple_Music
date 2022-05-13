@@ -70,8 +70,7 @@
 
 /* slider 배너 이미지 */
 .imgbox {
-    width: 1920px;
-    height: 100%;
+    width: 100%;
     margin: 0 auto;
     position: relative;
 }
@@ -121,7 +120,7 @@ section .preorderbox {
     margin: 0 auto;
 }
 
-section h1 {
+section h2 {
     display: inline-block;
     font-size: 45px;
     margin-left: -640px;
@@ -274,7 +273,7 @@ section .box5 {
     margin: 0 auto;
 }
 
-#section2 h1 {
+#section2 h2 {
     display: inline-block;
     font-size: 45px;
     margin-left: -650px;
@@ -622,7 +621,7 @@ section .box5 {
     margin: 0 auto;
 }
 
-#section5 h1 {
+#section5 h2 {
     display: inline-block;
     font-size: 45px;
     margin-left: -40px;

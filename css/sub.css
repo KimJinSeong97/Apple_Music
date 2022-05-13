@@ -269,7 +269,7 @@
     letter-spacing: -0.5px;
 }
 
-#detail .bar>.info_1>p {
+#detail .bar>.info_1>.story {
     font-size: 12px;
     width: 500px;
     letter-spacing: -0.5px;
